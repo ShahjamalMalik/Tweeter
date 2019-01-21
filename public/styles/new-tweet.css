@@ -1,0 +1,22 @@
+.new-tweet textarea {
+  padding: 5px;
+  width: 100%;
+}
+form > .counter {
+  float: right;
+  padding-top: 5px;
+}
+form > input {
+  float: left;
+}
+.new-tweet h2 {
+  text-align: left;
+  border-bottom: 1.5px solid black;
+}
+.new-tweet {
+  padding: 0.5em 0.5em 2em;
+  background-color: #eee;
+  border: 1px solid #a9a8a8;
+  border-radius: 5px;
+  margin: 0 2em 1em;
+}
