@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("textarea").on("keyup", function(e) {
+  $("textarea").on("keypress", function(e) {
 
 
     if ($("textarea").val().length > 140) {
