@@ -4,7 +4,6 @@
 }
 form > .counter {
   float: right;
-  padding-top: 5px;
 }
 form > input {
   float: left;
@@ -22,12 +21,18 @@ form > input {
 }
 
 .tweet {
+  flex-direction: column;
+
   background-color: #ececec;
   border-radius: 5px;
-  border-color: #a2a2a2;
+  border-color: #bdbdbd;
   border-style: solid;
   border-width: 1px;
+  padding: 0;
+  display: flex;
+  margin-top: 50px;
   background-color: white;
+  height: 220px;
   margin: 0 2em 1em;
 }
 
@@ -36,14 +41,14 @@ form > input {
   background-color: rgba(158, 158, 158, 0.13);
   border-top: solid #bdbdbd 0px;
   border-radius: 5px;
-
+  justify-content: space-between;
   height: 70px;
   opacity: .5;
 }
 
 .tweet header h1 {
   font-size: 1.5em;
-  color: #636465;
+  color: #6b6c6f;
   padding-right: 40px;
   margin-top: 15px;
   margin: auto;
@@ -62,21 +67,22 @@ form > input {
 }
 
 .tweet .tweet-content p {
-  font-size: 1.3em;
-  margin-left: 15px;
-  margin-top: 35px;
+    font-size: 1.3em;
+    margin-left: 15px;
+    margin-top: 35px;
 }
 
 .tweet footer {
-  border-top: solid 1px rgba(64, 63, 63, 0.26);
-  height: 5px;
+    border-top: solid 1px rgba(128, 128, 128, 0.32);
+    height: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
 .tweet footer #yo {
     font-size: 0.9em;
     margin-left: 15px;
-    margin-top: 15px;
 }
 
 .tweet img {
@@ -90,11 +96,11 @@ form > input {
 }
 
 .tweet:hover header{
-  opacity: 1;
+opacity: 1;
 }
 
 .tweet:hover {
-  border-color: black;
+border-color: black;
 }
 
 footer .animation {
@@ -102,9 +108,39 @@ footer .animation {
   float: right;
   color: green;
   padding-right: 5px;
-  margin-top: -30px;
 }
 
 article:hover .animation {
   display: block;
+}
+
+#nav-bar button {
+    float: right;
+    width: 140px;
+    height: 60px;
+    font-size: 1.5em;
+    color: #00826d;;
+    border: solid black 2.4px;
+    border-radius: 7px;
+    background-color: #ddfffe;
+    margin-top: 10px;
+}
+
+#nav-bar button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.hidden {
+display:none;
+}
+
+.errorBlank {
+  color:red;
+}
+
+.error140 {
+  color:red;
 }

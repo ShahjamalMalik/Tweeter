@@ -20,30 +20,33 @@
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
-  <body>
-
+ <body>
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png">
+      <img class="logo" src="/images/bird.png" ">
       <span class="header">Tweeter</span>
+       <button class="large-button"><i class="far fa-edit"></i> Compose</button>
     </nav>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-    <section class="new-tweet">
-  <h2>Compose Tweet</h2>
-  <form class = 'submitTweet' name="submitTweet" action="/tweets" method="POST">
-    <textarea name="text" placeholder="What are you humming about?"></textarea>
-    <input type="submit" value="Tweet">
-    <span class="counter">140</span>
-  </form>
-</section>
-  <div id="tweets" class="container">
-
-
-
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+         <form class = 'submitTweet' name="submitTweet" action="/tweets" method="POST">
+            <textarea class="textArea" name="text" placeholder="What are you humming about?"></textarea>
+            <input type="submit" value="Tweet">
+            <span class="counter">140</span>
+          </form>
+          <body OnLoad="document.submitTweet.text.focus();">
+                  <div class="errorMessages">
+          <p class="errorBlank hidden"><i class="fa fa-times"></i>Error: Tweet cannot be blank!</p>
+          <p class="error140 hidden"><i class="fa fa-times"></i>Error: Length of tweet cannot be greater than 140 characters!!</p>
+        </div>
+      </section>
+    <div id="tweets" class="container">
 
     </main>
   </body>
-
 </html>
+
+
+
